@@ -26,3 +26,8 @@ backend/target/
 
 # Logs
 *.log
+
+# Eclipse workspace
+
+.metadata/
+backend/.metadata/
