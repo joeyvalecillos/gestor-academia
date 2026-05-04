@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Gestor Academia</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+	
+	<a href="index.html" class="volver">← Volver al panel</a>
+
+	<h1>Consulta de Alumno</h1>
+	<p id="nombreAlumno"></p>
+	
+	<p style="font-size: 0.9em; color: #666;">
+		Puedes consultar el ID del alumno en la sección "Gestionar alumnos".
+		</p>
+
+<input type="number" id="alumnoId" placeholder="ID Alumno">
+<button onclick="cargarDatos()">Buscar</button>
+
+<p id="mensaje"></p>
+
+<h2>Cursos</h2>
+<ul id="cursos"></ul>
+
+<h2>Pagos</h2>
+<ul id="pagos"></ul>
+
+<h2>Total pagado</h2>
+<p id="total" class="resumen-importe"></p>
+
+<h2>Total pendiente</h2>
+<p id="pendiente" class="resumen-importe"></p
+
+	<h2>Resumen económico</h2>
+
+	<div class="barra-resumen">
+	    <div id="barraPagado" class="barra-pagado"></div>
+	    <div id="barraPendiente" class="barra-pendiente"></div>
+	</div>
+
+	<div class="leyenda">
+	    <span class="verde">■ Pagado</span>
+	    <span class="rojo">■ Pendiente</span>
+	</div>
+
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

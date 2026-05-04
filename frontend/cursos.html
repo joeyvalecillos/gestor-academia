@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionar cursos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="volver">← Volver al panel</a>
+
+    <h1>Gestionar cursos</h1>
+    <p id="mensaje"></p>
+
+    <h2>Crear curso</h2>
+
+    <div class="form-pago">
+        <input type="text" id="nombreCurso" placeholder="Nombre del curso">
+        <input type="text" id="nivel" placeholder="Nivel (A1, B2...)">
+        <input type="text" id="horario" placeholder="Horario">
+
+        <input type="number" id="precioMensual" placeholder="Precio mensual">
+        <input type="number" id="precioTrimestral" placeholder="Precio trimestral">
+        <input type="number" id="precioAnual" placeholder="Precio anual">
+
+        <button onclick="crearCurso()">Guardar curso</button>
+    </div>
+
+    <h2>Listado de cursos</h2>
+    <ul id="listaCursos"></ul>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

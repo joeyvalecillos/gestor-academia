@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestionar alumnos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="volver">← Volver al panel</a>
+
+    <h1>Gestionar alumnos</h1>
+    <p id="mensaje"></p>
+
+    <h2>Registrar nuevo alumno</h2>
+
+    <div class="form-pago">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellidos" placeholder="Apellidos">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="telefono" placeholder="Teléfono">
+		<select id="cursoId">
+		    <option value="">Seleccionar curso</option>
+		</select>
+        <button onclick="crearAlumno()">Guardar alumno</button>
+    </div>
+
+    <h2>Listado de alumnos</h2>
+    <ul id="listaAlumnos"></ul>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
